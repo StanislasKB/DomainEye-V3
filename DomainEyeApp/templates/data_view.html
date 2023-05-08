@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titre %}DomainEye APP | Info{% endblock titre %}
+
+{% block content %}
+    <div class="container-fluid">
+        <br><br><br>
+        <center>
+    <table class="table table-striped mt-6 w-75 ">
+        <thead>
+          <tr>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bold h4 ">Registrar Informations</td>
+            <td></td>
+          </tr>
+          <tr class="fs-4" style="background-color: ;">
+            <td>
+                
+                                               
+                <div>Name</div>
+                <div>Whois Server</div>
+                <div>URL</div>
+                <div>Status</div>
+            </td>
+            <td>
+                
+               <div>{{registrar}}</div>
+               <div>{{whois_server}}</div>
+               <div>{{registrar_url}}</div>
+               <div>{{domain_status}}</div>
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="bold h4">Important Dates</td>
+            <td></td>
+          </tr>
+          <tr class="fs-4" style="background-color: ;">
+            <td>
+                <div>Created On</div>
+                <div>Updated On</div>
+                <div>Expires On</div>
+                
+            </td>
+            <td>
+                <div>{{creation_date}}</div>
+                <div>{{updated_date}}</div>
+                <div>{{registrar_registration_expiration_date_expiration_date}}</div>
+                
+                
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="bold h4">Name servers</td>
+            <td></td>
+          </tr>
+          <tr class="fs-4" style="background-color: ;">
+            <td>
+                <div>Name Server </div>
+               
+                
+            </td>
+            <td>
+                <div>{{name_servers}}</div>
+                
+                
+                
+            </td>
+          </tr>
+          
+          
+         
+            <td class="bold h4 w-50">Registrar Data</td>
+            <td></td>
+          </tr>
+          <tr class="" style="background-color: ;">
+            <td>
+                <div class="bold fs-4">Registrant Contact Information :</div>
+                <div class="me-5 mt-1">
+                    <table class="table table-borderless me-5 fs-5">
+                        
+                        <tr>
+                            <td>Name</td>
+                            <td>{{registrant_name}}</td>
+                        </tr>
+                        <tr>
+                            <td>Organization</td>
+                            <td>{{registrant_organization}}</td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td>{{registrant_city}}</td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td>Postal Code</td>
+                            <td>{{registrant_postal_code}}</td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td>{{registrant_country}}</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>{{registrant_street}}</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>{{emails}}</td>
+                        </tr>
+                    </table>
+                </div>
+                
+
+                
+                
+            </td>
+            <td>
+
+            </td>
+          </tr>
+          
+          
+        </tbody>
+      </table>
+    </div>
+</center>
+{% endblock content %}
